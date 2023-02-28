@@ -5,7 +5,7 @@ pipeline {
             steps {
                 script {
                     def fileNames = []
-                    new File('/path/to/directory').eachFile {
+                    new File('directory').eachFile {
                         if (it.isFile()) {
                             fileNames.add(it.getName())
                         }
